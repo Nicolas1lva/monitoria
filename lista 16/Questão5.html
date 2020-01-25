@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+<script>
+    var sorteio = new Array()
+
+    document.write("<br>Valores sorteados<br>")
+    for(var i = 0;i<5;i++){
+        sorteio[i] = Math.floor(Math.random()*11)
+        document.write(sorteio[i],", ")
+    }
+    document.write("<br>Posição dos pares.<br>")
+    for(var i = 0;i<5;i++){
+        
+        if(sorteio[i]%2 == 0){
+            document.write(i,": ",sorteio[i],"<br>")
+        }
+    }
+</script>

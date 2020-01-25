@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<script>
+	
+	var i
+	var A = parseFloat(prompt("Digite o primeiro número"))
+	var B = parseFloat(prompt("Digite o segundo número"))
+
+	if(A < B){
+		for (var i = A; i <= B; i++){
+			if (i%5==3 || i%5==2) {
+				document.write(i,"<br>")	
+			}
+			
+		}
+	}
+	else if (B < A) {
+		for (var i = B; i <= A; i++){
+			if (i%5==3 || i%5==2) {
+				document.write(i,"<br>")	
+			}
+			
+		}
+	}
+	else{
+		document.write("Os números são iguais")
+	}
+</script>

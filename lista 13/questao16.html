@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<script>
+	
+	var i
+	var qnt = 0
+	var n = parseFloat(prompt("Digite um número"))
+
+	for (var i = 1; i <= n; i++){
+		if(n%i==0){
+			document.write(i,"<br>")
+			qnt++
+		}
+
+	}
+	if (qnt == 2) {
+		document.write("<br>O número ",n," é primo")
+	}
+	else{
+		document.write("<br>O número ",n," não é primo e possui ",qnt," divisores")
+	}
+
+</script>

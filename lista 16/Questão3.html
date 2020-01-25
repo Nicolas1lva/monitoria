@@ -1,0 +1,15 @@
+<meta charset="UTF-8">
+<script>
+    var vetor = new Array()
+    var cont = 0
+    for(var i = 0;i<5;i++){
+        vetor[i] = parseInt(prompt("digite um valor"))
+    }
+    for(var i = 0;i<5;i++){
+        document.write(vetor[i],", ")
+        if(vetor[i]%2 == 0){
+            cont++
+        }
+    }
+    document.write("<br>",cont)
+</script>

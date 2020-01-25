@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lampada</title>
+</head>
+<body>
+
+	<img src="lampada2.jpg" id="lamp" onmouseover="mudar(1)" onmouseout="mudar(2)" onclick="mudar(3)">
+
+	<script>
+		var lampadaNaoQuebrada = true
+
+        function mudar(tipo){
+            var luz = document.getElementById("lamp")
+            if(lampadaNaoQuebrada){
+                if(tipo == 1){
+                	luz.src = "lampada1.jpg"
+                }
+                else if(tipo == 2){
+                    luz.src = "lampada2.jpg"
+                }
+                else{
+                    luz.src = "lampada3.jpg"
+                    lampadaNaoQuebrada = false
+                }
+            }
+        }
+	</script>
+
+</body>
+</html>

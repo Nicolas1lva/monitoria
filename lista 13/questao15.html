@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+<script>
+	
+	var i
+	var qnt = 0
+	var n = parseFloat(prompt("Digite um número"))
+
+	for (var i = 1; i <= n; i++){
+		if(n%i==0){
+			document.write(i,"<br>")
+			qnt++
+		}
+
+	}
+	document.write("<br>O número ",n," possui ",qnt," divisores")
+
+</script>

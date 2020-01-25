@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+<script>
+	var codigo,qnt
+
+	codigo = prompt("digite o código do lanche")
+	qnt = parseInt(prompt("digite a quantidade de lanches"))
+
+	switch(codigo){
+		case '100':
+			document.write(qnt*3)
+			break
+		case '101':
+			document.write(qnt*2.5)
+			break
+		case '102':
+			document.write(qnt*1.5)
+			break
+		case '103':
+			document.write(qnt*2)
+			break
+		case '104':
+			document.write(qnt*1)
+			break
+		case '105':
+			document.write(qnt*1.5)
+			break
+		default:
+			document.write("codigo invalido")
+	}
+
+</script>	

@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<script>
+	
+	var i,soma = 0
+	var n = parseFloat(prompt("Digite a quantidade de jogadores"))
+
+	for (var i = 1; i <= n; i++){
+		
+		var altura = parseFloat(prompt("Digite a altura do ", i,"º jogador"))
+		soma += altura
+
+	}
+
+	document.write("Média de altura = ",soma/(i-1))
+
+</script>

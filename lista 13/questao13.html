@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<script>
+	
+	var x = 0
+	var y = 1
+
+	var n = parseFloat(prompt("Digite um número"))
+
+	document.write(y,", ")
+
+	for (var i = 1; i < n; i++){
+
+		var prox = x+y
+		x = y
+		y = prox
+		
+		document.write(prox,", ")
+
+	}
+
+</script>

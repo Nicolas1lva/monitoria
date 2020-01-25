@@ -1,0 +1,17 @@
+<meta charset = "UTF-8">
+<script>
+	function mostra(frase){
+		document.write(frase)
+	}
+
+	function calculaPontos(v,e){
+		var pontos = v*3 + e
+
+		return pontos
+	}
+
+	var vit = parseInt(prompt("Quantos jogos o time venceu?"))
+	var emp = parseInt(prompt("Quantos jogos o time empatou?"))
+
+	mostra("O time tem "+calculaPontos(vit,emp)+" pontos!")
+</script>

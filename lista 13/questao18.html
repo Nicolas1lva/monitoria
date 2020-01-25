@@ -1,0 +1,39 @@
+<meta charset="utf-8">
+<script>
+	
+	//Questão problemática; Verdepois com mais calma
+
+	var i
+	var qnt = 0
+	var primo
+	var somaPri = 0
+	var n = parseFloat(prompt("Digite um número"))
+
+	for (var i = 1; i <= n; i++)
+	{
+		if(n%i==0)
+		{
+			primo = 0
+			qnt++
+			for (var j = 1 ; j <= i;j++)
+			{
+				primo++
+				if (primo == 2 || i == 1)
+				{
+					somaPri+=i
+					document.write(i,"<br>")
+				}
+			}
+		}
+	}
+	document.write("<br>Soma de todos números primos = ",somaPri,"<br>")
+	if (qnt == 2) 
+	{
+		document.write("<br>O número ",n," é primo")
+	}
+	else
+	{
+		document.write("<br>O número ",n," não é primo e possui ",qnt," divisores")
+	}
+
+</script>

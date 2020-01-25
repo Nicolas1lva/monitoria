@@ -1,0 +1,23 @@
+<script>
+
+	/*Usando o comando for elabore um algoritmo que mostre no navegador a soma de todos os números múltiplos de 7 entre 12 e N, onde N é um valor informado pelo usuário (N deve ser maior que 14). */
+	
+	var i, n, soma = 0
+
+	n = parseInt(prompt("Digite um numero"))
+
+	while(n<=14){
+		n = parseInt(prompt("Digite um numero"))
+	}
+
+	for (var i = 12; i <= n; i++){
+
+		if (i%7==0) {
+			document.write(i,"<br>")
+			soma += i	
+		}
+		
+		
+	}
+	document.write("<br>", soma)
+</script>
